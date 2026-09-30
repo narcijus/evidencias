@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Evidências</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<main>
+    <h1>Registro de Evidências</h1>
+
+    <p>
+        Use este painel para organizar ocorrências e evidências.
+    </p>
+
+    <button id="novo">+ Nova ocorrência</button>
+
+    <section id="formulario" hidden>
+
+        <h2>Nova ocorrência</h2>
+
+        <label>Data e hora</label>
+        <input type="datetime-local" id="data">
+
+        <label>Plataforma</label>
+        <input
+            type="text"
+            id="plataforma"
+            placeholder="Instagram, Spotify, WhatsApp..."
+        >
+
+        <label>Usuário / conta</label>
+        <input
+            type="text"
+            id="usuario"
+            placeholder="@usuario"
+        >
+
+        <label>URL</label>
+        <input
+            type="url"
+            id="url"
+            placeholder="https://..."
+        >
+
+        <label>Descrição</label>
+        <textarea
+            id="descricao"
+            placeholder="Descreva o que aconteceu..."
+        ></textarea>
+
+        <label>Nome do arquivo da evidência</label>
+        <input
+            type="text"
+            id="arquivo"
+            placeholder="ex: screenshot_01.png"
+        >
+
+        <button id="salvar">Salvar ocorrência</button>
+
+    </section>
+
+    <section>
+        <h2>Ocorrências</h2>
+
+        <div id="lista"></div>
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
